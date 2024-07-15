@@ -3,11 +3,11 @@ import {useState} from 'react'
 function Condiçao(){
     const [email, setEmail] = useState()
     const [useremail, setUserEmail] = useState()
-    let emailcerto = 'pedro'
+    let emailcerto = 'a'
     
     function enviaremail(e){
         e.preventDefault()
-        if(emailcerto === setEmail){
+        if( email === emailcerto){
             setUserEmail(email)
         }else{
             alert('errado')
